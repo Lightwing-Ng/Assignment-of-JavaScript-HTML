@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment One For JavaScript</title>
+    <link href="static/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="static/stylesheets/base.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Microsoft Yahei UI";
+        }
+    </style>
+</head>
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow: hidden">
+<div id="wrapper">
+    <!--Starting of Left Navi-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div id="slimScrollDiv" class="slimScrollDiv">
+            <div class="sidebar-collapse" style="width: auto; height: 100%">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img alt="image" class="img-circle" src="static/imgs/profile_small.jpg"></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">
+                                            Lightwing Ng
+                                        </strong>
+                                    </span>
+                                    <span class="text-muted text-xs block">
+                                        Super Administrator
+                                        <b class="caret"></b>
+                                    </span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a class="J_menuItem" href="#" data-index="0">Modify Avatar</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem" href="#" data-index="1">Personal Profiles</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem" href="#" data-index="2">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem" href="#" data-index="3">Mail Box</a>
+                                </li>
+                                <li class="divider">
+                                    Chinese Version
+                                </li>
+                                <li>
+                                    <a href="#">Retreat Safely</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="menu" active="true" href="index.html" second-level="false">
+                            <i class="glyphicon glyphicon-home"></i>
+                            <span class="nav-label" style="margin-left: 8px">
+                                Home
+                            </span>
+                            <span class="glyphicon glyphicon-menu-left menu-right"></span>
+                        </a>
+                        <ul class="nav nav-second-level hide">
+                            <li>
+                                <a class="J_menuItem" href="#" data-index="0">
+                                    Demo 1
+                                </a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="#" data-index="5">
+                                    Demo 2
+                                </a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="#" data-index="6">
+                                    Demo 3
+                                </a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="#" data-index="7">
+                                    Demo 4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    Demo 5
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <a class="menu" active="false" href="#" second-level="true">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        <span class="nav-label" style="margin-left: 8px">
+                                Basic Settings
+                            </span>
+                        <span class="glyphicon glyphicon-menu-left menu-right"></span>
+                    </a>
+                    <ul class="nav nav-second-level hide">
+                        <li>
+                            <a class="J_menuItem" href="#" data-index="0">
+                                House Management
+                            </a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="#" data-index="5">
+                                Personnel Scheduling
+                            </a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="#" data-index="6">
+                                Project Team
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="menu" active="false" href="#" second-level="true">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        <span class="nav-label" style="margin-left: 8px">
+                            Menu 3
+                        </span>
+                        <span class="glyphicon glyphicon-menu-left menu-right">
+                        </span>
+                    </a>
+                    <ul class="nav nav-second-level hide">
+                        <li>
+                            <a class="J_menuItem" href="#" data-index="0">
+                                Sub Menu 1
+                            </a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="#" data-index="5">
+                                Sub Menu 2
+                            </a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="#" data-index="6">
+                                Sub Menu 3
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--The End of Left Navi-->
+    <div id="page-wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                Settings
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown"
+                               role="button" aria-haspopup="true" aria-expanded="false">
+                                Messages
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <li role="presentation" class="active" style="background-color: whitesmoke;">
+                                    <a href="#">
+                                        Jessica commented you.
+                                    </a>
+                                </li>
+                                <li role="presentation" class="active" style="background-color: whitesmoke;">
+                                    <a href="#">
+                                        Mom sent you a message.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <input type="text" class="form-control" placeholder="搜索：顶配辉腾">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<script src="static/js/jquery.min.js?v=2.1.4"></script>
+<script src="static/js/bootstrap.min.js?v=3.3.6"></script>
+<script>
+    $(function () {
+            $('.menu').click(function () {
+                    console.log($(this).attr('second-level'));
+                    if ($(this).attr('second-level') == 'true') {
+                        if ($(this).attr('active') == 'false') {
+                            $(this).attr('active', 'true');
+                            $(this).next().removeClass('hide');
+                            $(this).addClass('nav-active');
+                            $(this).css('color', '#fff');
+                            $(this).children('.menu-right').removeClass('glyphicon-menu-left');
+                            $(this).children('.menu-right').addClass('glyphicon-menu-down')
+                        } else {
+                            $(this).attr('active', 'false');
+                            $(this).next().addClass('hide');
+                            $(this).removeClass('nav-active');
+                            $(this).css('color', '');
+                            $(this).children('.menu-right').removeClass('glyphicon-menu-down');
+                            $(this).children('.menu-right').addClass('glyphicon-menu-left')
+                        }
+                    }
+                }
+            );
+        }
+    )
+</script>
+</body>
+</html>
